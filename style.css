@@ -1,0 +1,452 @@
+body {
+  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-size: 18px;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+/* ナビゲーションバーのスタイル */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* ナビゲーションバーの右側を指定 */
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  background-color: #fff;
+  z-index: 2; /* ナビゲーションバーを手前に表示 */
+  background-color: rgba(255, 255, 255, 0.5); /* 背景の透明度を設定 */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s; /* カーソルが当たったときのアニメーションにトランジションを追加 */
+}
+
+.nav-links a:hover {
+  background-color: aliceblue;/* カーソルが当たったときの新しい色を指定 */
+  font-style: italic;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ヒーローセクションのスタイル */
+.main-hero {
+  margin-top: 80px;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  background-image: url('images/sea2.jpg');
+  position: relative; /* 相対的な配置を設定 */
+}
+
+.hero-content {
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5); /* 背景画像の透明度を調整 */
+}
+
+.hero-content h1 {
+  position: absolute; /* 絶対的な配置を設定 */
+  top: 50%; /* 上端の位置を中央に設定 */
+  left: 50%; /* 左端の位置を中央に設定 */
+  transform: translate(-50%, -50%); /* テキストを中央に配置 */
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .main-hero {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* 自己紹介セクションのスタイル */
+.about-me {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* その他のスタイルはそのまま */
+
+
+/* 自己紹介セクションのスタイル */
+.about-me {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  /* レスポンシブスタイルをここに追加 */
+}
+
+/* ポートフォリオセクションのスタイル */
+.portfolio-all {
+  background-image: url('images/background.jpg');
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: 256px; /* 画像の高さを調整（お好みのサイズに変更できます） */
+}
+
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .portfolio-item {
+      width: 100%;
+  }
+}
+
+/* Skills Section */
+.skills {
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.skill img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%; /* Creates circular icons */
+}
+
+.skill p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Responsive Design for Skills Section */
+@media (max-width: 768px) {
+  .skill {
+      width: 100%;
+  }
+}
+
+
+/* お問い合わせセクションのスタイル */
+.contact {
+  background-image: url('images/background.jpg');
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* メールアドレスとインスタグラムアカウントのスタイル */
+p {
+  font-size: 1.2rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  /* レスポンシブスタイルをここに追加 */
+}
+
+
+/* フッターのスタイル */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* アニメーションの初期状態（非表示） */
+img {
+  opacity: 0;
+  transform: translateY(20px); /* 下方向に移動して非表示 */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform; /* アニメーションの最適化 */
+}
+
+/* アニメーションの表示状態 */
+img.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: 256px;
+  transition: transform 0.3s; /* カーソルが当たったときのアニメーションにトランジションを追加 */
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.1); /* カーソルが当たったときに拡大するアニメーションを追加 */
+}
+
+/* すべての画像に角を丸めるスタイルを適用 */
+img {
+  border-radius: 10px; /* 任意の角丸め半径を指定 */
+  z-index: 1; /* 画像をナビゲーションバーの下に配置 */
+}
+
+
+
+
+
+/* project1.htmlのスタイル */
+/* ヒーローセクションのスタイル */
+.hero1 {
+  margin-top: 80px;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  background-image: url('images/lineimage.jpg');
+  position: relative; /* 相対的な配置を設定 */
+}
+
+
+/* 概要セクションのスタイル */
+#about { 
+  padding: 40px;
+  text-align: center;
+}
+
+#about h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#about p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+/* 課題セクションのスタイル */
+#problems {
+  background-image: url('images/background.jpg');
+  padding: 40px;
+  text-align: center;
+}
+
+#problems h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#problems p {
+  font-size: 1.2rem;
+}
+
+/* チャットボットの仕組みセクションのスタイル */
+#mechanism {
+  padding: 40px;
+  text-align: center;
+}
+
+#mechanism h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#mechanism p {
+  font-size: 1.2rem;
+}
+
+#mechanism img{
+  padding-bottom: 32px;
+}
+
+/* 成果と利点セクションのスタイル */
+#results {
+  background-image: url('images/background.jpg');
+  padding: 40px;
+  text-align: center;
+}
+
+#results h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+#results p {
+  font-size: 1.2rem;
+}
+
+#mechanism img {
+  max-width: 100%; /* 画像の幅をコンテナに合わせる */
+  height: auto; /* アスペクト比を維持 */
+  height: 256px;
+}
+
+#results li{
+  font-size: large;
+}
+
+#learn{
+  padding: 40px;
+  text-align: center;
+}
+
+#learn h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  #about h1,
+  #about p,
+  #problems h2,
+  #problems p,
+  #mechanism h2,
+  #mechanism p,
+  #mechanism img,
+  #results h2,
+  #learn h2,
+  #learn p
+  #results p {
+    font-size: 1.5rem; /* レスポンシブフォントサイズ調整 */
+  }
+
+}
+
+
+
+
+/* project2.htmlのスタイル */
+/* project1とほぼ同じスタイルなので変えなくていい。ヒーローセクションだけ区別しておく */
+/* ヒーローセクションのスタイル */
+.hero2 {
+  margin-top: 80px;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  background-image: url('images/hangmanimg.jpg');
+  position: relative; /* 相対的な配置を設定 */
+}

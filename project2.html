@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Riku Itsuji</div>
+        <ul class="nav-links">
+            <li><a href="index.html" >About Me</a></li>
+            <li><a href="index.html">Works</a></li>
+            <li><a href="index.html">Skills</a></li>
+            <li><a href="index.html">Contact</a></li>
+        </ul>
+        <div class="burger-menu">&#9776;</div>
+    </nav>
+
+    <header class="hero2">
+      <div class="hero-content">
+          <h1>Hangman</h1>
+      </div>
+  </header>
+
+    <!-- 概要セクション -->
+    <section id="about">
+        <h1>概要</h1>
+        <p>Hangmanというアメリカの子供たちの間で流行った単語当てゲームをPC上で実装しました。</p>
+    </section>
+
+    <!-- 課題セクション -->
+    <section id="problems">
+        <h2>Hangmanとは</h2>
+        <p>hangmanは「絞首刑を執行する人」を意味します。このゲームでは単語を当てられないと人がつるされて殺されてしまいます。以下の要領でゲームを行います。</p>
+
+        <li>2人で行う。まず単語を出題する人と答える人を決める。</li>
+        <li>出題者は単語を選び、単語の文字数を表す下線を引く。絞首台を描く。</li>
+        <li>（単語が含まれる場合）下線に文字を書く</li>
+        <li>（単語が含まれない場合）ハングマンを書き加える</li>
+        <li>ハングマン（つるされる人）が完成してしまったらゲームオーバー。出題者の勝ち</li>
+        <li>ハングマン（つるされる人）が完成する前に単語を当てたら回答者の勝ち</li>
+    </section>
+
+    <!-- チャットボットの仕組みセクション -->
+    <section id="mechanism">
+        <h2>ゲームの様子</h2>
+        <p>プレーヤー数を選ぶとゲームスタート。左の破線はアルファベット数、右の図形はhangmanがつるされる絞首台である。</p>
+        <img src="images/01.jpg" alt="通知画像">
+        <p>aを入力。答えの単語には含まれないようなのでhangmanの頭が出てきた。</p>
+        <img src="images/02.jpg" alt="フォーム画像">
+        <p>eを入力。eは単語に含まれるようなので左の破線が変化し、hangmanは現状維持。</p>
+        <img src="images/03.jpg" alt="記録画像">
+        <p>複数回繰り返した。上限回数間違えてhangmanが完成した（つるされた）ので回答者はゲームオーバー</p>
+        <img src="images/04.jpg" alt="記録画像">
+    </section>
+
+    <!-- 成果と利点セクション -->
+    <section id="results">
+        <h2>学んだこと</h2>
+          <p>この作品はpythonを勉強して始めて制作したものでした。それまでに学んだ基本的な文法や関数などの概念をアウトプットすることが出来ました。</p>
+    </section>
+
+        <!-- 学びセクション -->
+        <section id="learn">
+          <h2>今後の展望</h2>
+          <p>今回はターミナル上でのみ動くゲームを作成しましたが、次回は誰でもアクセスできるアプリ形式で作成したいです。また、今回は無作為にアルファベットを当てる方式でしたが、適宜ヒントを加える機能が追加出来たら、より面白いゲームになると思いました。</p>
+      </section>
+
+    <footer>
+        <p>&copy; 2023 Riku Itsuji. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
